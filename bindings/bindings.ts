@@ -23,6 +23,12 @@ const opts = {
       "https://github.com/littledivy/deno_audio/releases/download/0.2.0",
       import.meta.url,
     )).toString(),
+  suffixes: {
+    darwin: {
+      aarch64: ".aarch64",
+      x86_64: ".x86_64",
+    },
+  },
   policy: undefined,
 }
 const _lib = await prepare(opts, {
