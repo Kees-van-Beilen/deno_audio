@@ -20,7 +20,7 @@ const opts = {
   name: "deno_audio",
   url:
     (new URL(
-      "https://github.com/Kees-van-Beilen/deno_audio/releases/download/0.2.0",
+      "https://github.com/Kees-van-Beilen/deno_audio/releases/download/0.2.1",
       import.meta.url,
     )).toString(),
   suffixes: {
