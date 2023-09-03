@@ -37,7 +37,7 @@ const _lib = await dlopen(opts, {
 })
 
 export function play(a0: string) {
-  const a0_buf = encode(a0)
+  const a0_buf = Deno.UnsafePointer.of(encode(a0))
   let rawResult = _lib.symbols.play(a0_buf, a0_buf.byteLength)
   const result = rawResult
   return result
