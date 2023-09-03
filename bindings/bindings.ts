@@ -1,5 +1,6 @@
 // Auto-generated with deno_bindgen
-import { CachePolicy, prepare } from "https://deno.land/x/plug@1.0.2/plug.ts"
+// import { CachePolicy, prepare } from "https://deno.land/x/plug@1.0.2/plug.ts"
+import { dlopen, FetchOptions } from "https://deno.land/x/plug@1.0.2/mod.ts";
 function encode(v: string | Uint8Array): Uint8Array {
   if (typeof v !== "string") return v
   return new TextEncoder().encode(v)
@@ -31,7 +32,7 @@ const opts = {
   },
   policy: undefined,
 }
-const _lib = await prepare(opts, {
+const _lib = await dlopen(opts, {
   play: { parameters: ["pointer", "usize"], result: "void", nonblocking: true },
 })
 
