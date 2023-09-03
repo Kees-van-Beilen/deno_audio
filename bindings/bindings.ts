@@ -1,5 +1,5 @@
 // Auto-generated with deno_bindgen
-import { CachePolicy, prepare } from "https://deno.land/x/plug@0.5.1/plug.ts"
+import { CachePolicy, prepare } from "https://deno.land/x/plug@1.0.2/plug.ts"
 function encode(v: string | Uint8Array): Uint8Array {
   if (typeof v !== "string") return v
   return new TextEncoder().encode(v)
